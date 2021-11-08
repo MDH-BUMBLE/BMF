@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-13">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+		<accessrules>
+			<accessrule kind="accessible" pattern="com/sun/xml/internal/**"/>
+		</accessrules>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Mydata/bumble-projects/BUMBLE-NLP-Component/stanford-tagger-4.2.0/stanford-postagger-full-2020-11-17/stanford-postagger.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Mydata/bumble-projects/BUMBLE-NLP-Component/stanford-tagger-4.2.0/stanford-postagger-full-2020-11-17/stanford-postagger-4.2.0.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Mydata/bumble-projects/BUMBLE-NLP-Component/stanford-tagger-4.2.0/stanford-postagger-full-2020-11-17/stanford-postagger-4.2.0-javadoc.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Mydata/bumble-projects/BUMBLE-NLP-Component/stanford-tagger-4.2.0/stanford-postagger-full-2020-11-17/stanford-postagger-4.2.0-sources.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

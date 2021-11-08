@@ -1,0 +1,78 @@
+ class PssModel  {
+contains AbstractComponent[] abstractcomponent
+
+}
+
+ class AbstractCom  {
+contains Action concept[one to many] action concept
+refers AbstractComponent associate[one to many] abstractcomponent associate
+
+}
+
+ class Component  extends AbstractComponent {
+contains DataObject[] dataobject
+
+}
+
+ class RootComponent  extends Component {
+refers ComponentInvocation concept
+			
+			ActionInvocation[1] componentinvocation concept
+			
+			actioninvocation
+
+}
+
+ class ComponentIn  {
+refers Component[] component
+
+}
+
+ class ActionInvoc  {
+refers Action concept[] action concept
+
+}
+
+ class Action i  extends ActionInvocation concept {
+contains Activity concept
+			
+			Object concept[] activity concept
+			
+			object concept
+
+}
+
+ class Activity  {
+contains ComponentInvocation concept[] componentinvocation concept
+
+}
+
+ class Object i  extends DataObject concept {
+
+}
+
+ class DataFlowObj  extends Stream concept and buffer concept {
+
+}
+
+ class Stream  {
+
+}
+
+ class Buffer h  {
+
+}
+
+ class DataFlowObj  extends Resource concept {
+
+}
+
+ class Resource  extends Pool concept {
+
+}
+
+ class Pool as  {
+refers resource concept[1] resource concept
+
+}
+
