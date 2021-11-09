@@ -1,0 +1,29 @@
+abstract class PssModel {
+contains Abstract_Component[] abstract_component
+}
+
+class Abstract_Component {
+string Component_identifier
+}
+
+abstract class RootComponent extends Abstract_Component{
+contains Component_Invocation[] component_invocation
+}
+
+abstract class Component extends Abstract_Component{
+}
+
+abstract class Component_Invocation {
+integer invocation_id
+}
+
+class Activity {
+refers PSSModel[+] pssmodel
+refers Component[+] component
+contains Abstract_Component[] abstract_component
+contains Component_Invocation[+] component_invocation
+Integer Component_inve
+String Compo
+integer Operation1()
+}
+

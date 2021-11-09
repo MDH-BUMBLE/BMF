@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<concepts>
+	<CONCEPT0>
+		<name>PssModel</name>
+		<isabstract />
+		<containment>
+			<name> Abstract_Component </name>
+			<cardinality> zero to many </cardinality>
+		</containment>
+		<association></association>
+		<inheritance />
+		<attribute>
+			<name />
+			<type />
+		</attribute>
+		<operation>
+			<name />
+			<type />
+		</operation>
+		<constraint />
+	</CONCEPT0>
+	<CONCEPT1>
+		<name>Abstract_Component</name>
+		<isabstract> yes </isabstract>
+		<containment />
+		<association />
+		<inheritance />
+		<attribute>
+			<name> Component_identifier </name>
+			<type> string </type>
+		</attribute>
+		<operation>
+			<name />
+			<type />
+		</operation>
+		<constraint />
+	</CONCEPT1>
+	<CONCEPT2>
+		<name>RootComponent</name>
+		<isabstract />
+		<containment>
+			<name> Component_Invocation </name>
+			<cardinality> zero to many </cardinality>
+		</containment>
+		<association />
+		<inheritance>
+			<name> Abstract_Component </name>
+		</inheritance>
+		<attribute>
+			<name>
+			</name>
+			<type></type>
+		</attribute>
+		<operation>
+			<name />
+			<type />
+		</operation>
+		<constraint />
+	</CONCEPT2>
+	<CONCEPT3>
+		<name>Component</name>
+		<containment>
+			<cardinality></cardinality>
+		</containment>
+		<association />
+		<inheritance>
+			<name> Abstract_Component </name>
+		</inheritance>
+		<attribute>
+			<name>
+			</name>
+			<type>
+			</type>
+		</attribute>
+		<operation>
+			<name />
+			<type />
+		</operation>
+		<constraint />
+	</CONCEPT3>
+	<CONCEPT4>
+		<name>Component_Invocation </name>
+		<containment>
+			<cardinality></cardinality>
+		</containment>
+		<association />
+		<inheritance />
+		<attribute>
+			<name> invocation_id </name>
+			<type> integer </type>
+		</attribute>
+		<operation>
+			<name />
+			<type />
+		</operation>
+		<constraint />
+	</CONCEPT4>
+	<CONCEPT5>
+		<name>Activity</name>
+		<isabstract> yes </isabstract>
+		<containment>
+			<name> Abstract_Component </name>
+			<cardinality> zero to many </cardinality>
+		</containment>
+		<containment>
+			<name> Component_Invocation </name>
+			<cardinality> one to many </cardinality>
+		</containment>
+		<association>
+			<name> PSSModel </name>
+			<cardinality> one to many </cardinality>
+		</association>
+		<association>
+			<name> Component </name>
+			<cardinality> one to many </cardinality>
+		</association>
+		<inheritance />
+		<attribute>
+			<name> Component_inve </name>
+			<type> Integer </type>
+		</attribute>
+		<attribute>
+			<name> Compo </name>
+			<type> String </type>
+		</attribute>
+		<operation>
+			<name> Operation1 </name>
+			<type> integer </type>
+		</operation>
+		<constraint />
+	</CONCEPT5>
+</concepts>

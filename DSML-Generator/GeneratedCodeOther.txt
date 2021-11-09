@@ -1,0 +1,93 @@
+concept PssModel extends BaseConcept  implements <none>
+instance can be root: false
+alias: <no alias>
+short description: <no short description>
+
+references: 
+<< ... >> 
+
+children: 
+abstract_component : Abstract_Component[0..n]
+
+properties: 
+<< ... >> 
+
+
+abstract concept Abstract_Component extends BaseConcept  implements <none>
+instance can be root: true
+alias: <no alias>
+short description: <no short description>
+
+references: 
+<< ... >> 
+
+children: 
+<< ... >> 
+
+properties: 
+Component_identifier : string
+
+
+concept RootComponent extends Abstract_Component implements <none>
+instance can be root: false
+alias: <no alias>
+short description: <no short description>
+
+references: 
+<< ... >> 
+
+children: 
+component_invocation : Component_Invocation[0..n]
+
+properties: 
+<< ... >> 
+
+
+concept Component extends Abstract_Component implements <none>
+instance can be root: false
+alias: <no alias>
+short description: <no short description>
+
+references: 
+<< ... >> 
+
+children: 
+<< ... >> 
+
+properties: 
+<< ... >> 
+
+
+concept Component_Invocation extends BaseConcept  implements <none>
+instance can be root: false
+alias: <no alias>
+short description: <no short description>
+
+references: 
+<< ... >> 
+
+children: 
+<< ... >> 
+
+properties: 
+invocation_id : integer
+
+
+abstract concept Activity extends BaseConcept  implements <none>
+instance can be root: true
+alias: <no alias>
+short description: <no short description>
+
+references: 
+pssmodel : PSSModel[1..n]
+component : Component[1..n]
+
+children: 
+abstract_component : Abstract_Component[0..n]
+component_invocation : Component_Invocation[1..n]
+
+properties: 
+Component_inve : Integer
+Compo : String
+
+

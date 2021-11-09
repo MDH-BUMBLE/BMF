@@ -1,0 +1,12 @@
+PssModel contains Abstract_Component concept where cardinality is Zero To Many. 
+
+Abstract_Component is abstract concept. It has Component_identifier attribute of type string. 
+
+RootComponent inherits Abstract_Component. It contains Component_Invocation concept where cardinality is Zero To Many. 
+
+Component inherits Abstract_Component. 
+
+Component_Invocation has invocation_id attribute of type integer. 
+
+Activity is abstract concept. It associates PSSModel concept where cardinality is One To Many. It associates Component concept where cardinality is One To Many. It contains Abstract_Component concept where cardinality is Zero To Many. It contains Component_Invocation concept where cardinality is One To Many. It has Component_inve attribute of type Integer. It has Compo attribute of type String. It has Operation1 operation of type  integer. 
+
